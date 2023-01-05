@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="LaBallade Cafe" />
+    <meta name="keywords" content="Cafe, coffee shop, events" />
+    <meta name="author" content="Hemansh Singh Bhatia" />
+    <!-- <meta http-equiv="refresh" content="30" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaBallade</title>
+
+    <!-- CSS fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Packages -->
+    <script src="https://kit.fontawesome.com/62ae4f4938.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/mmenu.css" />
+    <link rel="stylesheet" href="./splide/css/splide.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <header class="container">
+                <a href="./index.html" class="logo">LaBallade</a>
+                <a id="nav-icon" href="#menu" class="fa-solid fa-2xl fa-bars"></a>
+                <nav id="menu">
+                    <ul>
+                        <li class="Selected"><a href="index.html">Home</a></li>
+                        <li><a href="html/about.html">About</a></li>
+                        <li><a href="html/menu/index.html">Menu</a></li>
+                        <li><a href="html/events.html">Events</a></li>
+                    </ul>
+                </nav>
+                <nav class="menu-desktop">
+                    <ul>
+                        <li class="Selected"><a href="index.html">Home</a></li>
+                        <li><a href="html/about.html">About</a></li>
+                        <li><a href="html/menu/index.html">Menu</a></li>
+                        <li><a href="html/events.html">Events</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main class="homepage">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./images/live-music.jpg" alt="Live music">
+                            <div class="container">
+                                <h4>The Nomads</h4>
+                                <p>
+                                    Friday | <time datetime="2022-04-23">April 22</time> | <time
+                                        datetime="19:00">7pm</time> onwards
+                                </p>
+                                <span class="note">LIVE</span>
+                                <a class="cta" href="./html/contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/date.jpg" alt="Date night">
+                            <div class="container">
+                                <h4>Speed Dating Night</h4>
+                                <p>
+                                    Saturday | <time datetime="2022-04-23">April 23</time> | <time
+                                        datetime="18:00">6pm</time>-<time datetime="20:00">8pm</time>
+                                </p>
+                                <span class="note">Entry $10</span>
+                                <a class="cta" href="./html/contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/open-mic.jpg" alt="Mic on stage">
+                            <div class="container">
+                                <h4>Open Mic Night</h4>
+                                <p>
+                                    Sunday | <time datetime="2022-04-23">April 24</time> | <time
+                                        datetime="18:00">6pm</time>-<time datetime="22:00">10pm</time>
+                                </p>
+                                <span class="note">FREE</span>
+                                <a class="cta" href="./html/contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="newsletter">
+                <div class="container">
+                    <h2>Stay Updated</h2>
+                    <p>Sign up to our Newsletter and be the first one to know about any upcoming events.</p>
+                    <form class="sign-up">
+                        <input type="email" placeholder="Email" name="email" id="email-newsletter">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </aside>
+            <section class="menu">
+                <div class="container">
+                    <h2>Menu</h2>
+                    <ul class="categories">
+                        <li class="drinks">
+                            <a href="./html/menu/drinks.html">
+                                <img src="./images/drinks.jpg" alt="Drinks">
+                                <h6>Drinks</h6>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="./html/menu/food.html">
+                                <img src="./images/food.jpg" alt="Foods">
+                                <h6>Food</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <article class="our-story">
+                <div class="container">
+                    <h2>Our Story</h2>
+                    <div class="youtube-wrapper show-thumbnail" tabindex="0" aria-label="Click to show video">
+                        <img class="thumbnail" src="./images/pexels-marta-dzedyshko-2067628.jpg">
+                        <iframe class="youtube" width="560" height="315" tabindex="-1" src="https://www.youtube-nocookie.com/embed/T7DN6xkRdXo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        We all have our bitter things in life. It's up to you how you taste it, sweeten it, and season
+                        it to
+                        be balanced. Our aim has always been to provide THE cafe experience to people through our
+                        events.
+                        But the fun shouldn't come at a cost to the environment. We support our local suppliers and only
+                        use
+                        organically source coffee beans. Now you can enjoy your coffe, Guilt Free.
+                    </p>
+                </div>
+            </article>
+            <section class="join-us">
+                <div class="container">
+                    <h2>Join Us</h2>
+                    <ul>
+                        <li class="host">
+                            <a href="./html/contact.html?reason=host">
+                                <img src="./images/party.jpg" alt="Host an event">
+                                <h6>Host an event</h6>
+                            </a>
+                        </li>
+                        <li class="supplier">
+                            <a href="./html/contact.html?reason=supplier">
+                                <img src="./images/coffee-beans.jpg" alt="organically sourced coffee beans">
+                                <h6>Be our local supplier</h6>
+                            </a>
+                        </li>
+                        <li class="employee">
+                            <a href="./html/contact.html?reason=employee">
+                                <img src="./images/employee.jpg" alt="employee working at LaBallade">
+                                <h6>Find your career</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <ul class="social-media">
+                    <li>
+                        <a href="facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="twitter.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="working-hours">
+                    <h6>Working Hours:</h6>
+                    <p>
+                        <time datetime="12:00">12pm</time> - <time datetime="02:00">2am</time>
+                    </p>
+                </div>
+                <div class="location">
+                    <h6>Location:</h6>
+                    <p>
+                        Cafe LaBallade About us<br>
+                        Some Amazing street, Downtown,<br>
+                        Party City, ON
+                    </p>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li class="Selected"><a href="index.html">Home</a></li>
+                        <li><a href="html/about.html">About</a></li>
+                        <li><a href="html/menu/index.html">Menu</a></li>
+                        <li><a href="html/events.html">Events</a></li>
+                        <li><a href="./html/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">
+                    All Rights Reserved. &copy; Copyright 2022.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- /#page -->
+
+    <!-- JS -->
+    <script src="./js/mmenu.js"></script>
+    <script src="./js/mmenu-init.js"></script>
+
+    <script src="./splide/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: 'loop'
+            });
+            splide.mount();
+        });
+    </script>
+    <script>
+        function hideThumbnail(event) {
+            var wrapper = event.currentTarget;
+            wrapper.removeEventListener('click', hideThumbnail, true);
+            wrapper.classList.remove('show-thumbnail');
+            wrapper.querySelector('iframe').removeAttribute('tabindex');
+            wrapper.querySelector('iframe').focus();
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var youtube = document.querySelectorAll('.youtube-wrapper');
+            youtube.forEach(function (wrapper) {
+                wrapper.addEventListener('click', hideThumbnail, true);
+            });
+        });
+    </script>
+</body>
+
+</html>

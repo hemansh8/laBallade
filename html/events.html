@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="LaBallade Cafe" />
+    <meta name="keywords" content="Cafe, coffee shop, events" />
+    <meta name="author" content="Hemansh Singh Bhatia" />
+    <!-- <meta http-equiv="refresh" content="30" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaBallade</title>
+
+    <!-- CSS fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Packages -->
+    <script src="https://kit.fontawesome.com/62ae4f4938.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/mmenu.css" />
+    <link rel="stylesheet" href="../splide/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <header class="container">
+                <a href="../index.html" class="logo">LaBallade</a>
+                <a id="nav-icon" href="#menu" class="fa-solid fa-2xl fa-bars"></a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./menu/index.html">Menu</a></li>
+                        <li class="Selected"><a href="./events.html">Events</a></li>
+                    </ul>
+                </nav>
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./menu/index.html">Menu</a></li>
+                        <li class="Selected"><a href="./events.html">Events</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main class="event-page">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="../images/live-music.jpg" alt="Live music">
+                            <div class="container">
+                                <h4>The Nomads</h4>
+                                <p>
+                                    Friday | <time datetime="2022-04-23">April 22</time> | <time
+                                        datetime="19:00">7pm</time> onwards
+                                </p>
+                                <span class="note">LIVE</span>
+                                <a class="cta" href="./contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../images/date.jpg" alt="Date night">
+                            <div class="container">
+                                <h4>Speed Dating Night</h4>
+                                <p>
+                                    Saturday | <time datetime="2022-04-23">April 23</time> | <time
+                                        datetime="18:00">6pm</time>-<time datetime="20:00">8pm</time>
+                                </p>
+                                <span class="note">Entry $10</span>
+                                <a class="cta" href="./contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../images/open-mic.jpg" alt="Mic on stage">
+                            <div class="container">
+                                <h4>Open Mic Night</h4>
+                                <p>
+                                    Sunday | <time datetime="2022-04-23">April 24</time> | <time
+                                        datetime="18:00">6pm</time>-<time datetime="22:00">10pm</time>
+                                </p>
+                                <span class="note">FREE</span>
+                                <a class="cta" href="./contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h1>All Events</h1>
+                    <div class="datepicker-wrapper">
+                        <label for="datepicker">Filter by date:</label>
+                        <input type="text" name="datepicker" id="datepicker" placeholder="Select a date">
+                    </div>
+                    <ul class="events-list">
+                        <li data-date="2022/04/22">
+                            <img src="../images/live-music.jpg" alt="Live music">
+                            <div class="content">
+                                <h4>The Nomads</h4>
+                                <p>
+                                    Friday | <time datetime="2022-04-23">April 22</time> | <time
+                                        datetime="19:00">7pm</time> onwards
+                                </p>
+                                <span class="note">LIVE</span>
+                                <a class="cta" href="./contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                        <li data-date="2022/04/23">
+                            <img src="../images/date.jpg" alt="Date night">
+                            <div class="content">
+                                <h4>Speed Dating Night</h4>
+                                <p>
+                                    Saturday | <time datetime="2022-04-23">April 23</time> | <time
+                                        datetime="18:00">6pm</time>-<time datetime="20:00">8pm</time>
+                                </p>
+                                <span class="note">Entry $10</span>
+                                <a class="cta" href="./contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                        <li data-date="2022/04/24">
+                            <img src="../images/open-mic.jpg" alt="Mic on stage">
+                            <div class="content">
+                                <h4>Open Mic Night</h4>
+                                <p>
+                                    Sunday | <time datetime="2022-04-23">April 24</time> | <time
+                                        datetime="18:00">6pm</time>-<time datetime="22:00">10pm</time>
+                                </p>
+                                <span class="note">FREE</span>
+                                <a class="cta" href="./contact.html?reason=reserve">Reserve seat now</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="no-events-alert">No events found on this date.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <ul class="social-media">
+                    <li>
+                        <a href="facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="twitter.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="working-hours">
+                    <h6>Working Hours:</h6>
+                    <p>
+                        <time datetime="12:00">12pm</time> - <time datetime="02:00">2am</time>
+                    </p>
+                </div>
+                <div class="location">
+                    <h6>Location:</h6>
+                    <p>
+                        Cafe LaBallade About us<br>
+                        Some Amazing street, Downtown,<br>
+                        Party City, ON
+                    </p>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./menu/index.html">Menu</a></li>
+                        <li class="Selected"><a href="./events.html">Events</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">
+                    All Rights Reserved. &copy; Copyright 2022.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- /#page -->
+
+    <!-- JS -->
+    <script src="../js/mmenu.js"></script>
+    <script src="../js/mmenu-init.js"></script>
+
+    <script src="../splide/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: 'loop'
+            });
+            splide.mount();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentDate = new Date();
+            var input = document.querySelector('#datepicker');
+            var datepicker = new Datepicker(input, {
+                autohide: true,
+                clearBtn: true,
+                format: 'yyyy/mm/dd',
+                todayHighlight: true,
+                minDate: currentDate
+            });
+
+            function filterEvents(selectedDate) {
+                document.querySelector('.events-list').classList.remove('no-events');
+                document.querySelector('.events-list').classList.add('filtered');
+                document.querySelectorAll('.events-list li').forEach(function (li) {
+                    if (li.dataset.date === selectedDate) {
+                        li.classList.add('show');
+                    } else {
+                        li.classList.remove('show');
+                    }
+                });
+            }
+
+            input.addEventListener('changeDate', function (data) {
+                var selectedDate = data.detail.datepicker.getDate('yyyy/mm/dd');
+                if (!selectedDate) {
+                    document.querySelector('.events-list').classList.remove('no-events');
+                    document.querySelector('.events-list').classList.remove('filtered');
+                } else if (document.querySelector('.events-list li[data-date="' + selectedDate + '"]')) {
+                    filterEvents(selectedDate);
+                } else {
+                    document.querySelector('.events-list').classList.add('no-events');
+                    document.querySelector('.events-list').classList.remove('filtered');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
